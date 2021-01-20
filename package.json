@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "bloodboiler-cli CLI",
   "author": "Lucas A Pelegrino <lucas.assuncao.p@gmail.com>",
-  "private": true,
   "bin": {
     "bloodboiler-cli": "bin/bloodboiler-cli"
   },
