@@ -1,25 +1,18 @@
-# bloodboiler-cli CLI
+# Bloodboiler CLI 🛠
 
-A CLI for bloodboiler-cli.
+The CLI tool to easily setup the bloodboiler projects
 
-## Customizing your CLI
+## How to use
 
-Check out the documentation at https://github.com/infinitered/gluegun/tree/master/docs.
-
-## Publishing to NPM
-
-To package your CLI up for NPM, do this:
-
-```shell
-$ npm login
-$ npm whoami
-$ npm lint
-$ npm test
-(if typescript, run `npm run build` here)
-$ npm publish
+```
+$ npx bloodboiler-cli new [project-name]
 ```
 
-# License
+### Dependencies
 
-MIT - see LICENSE
+- glugun
+- ora
 
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
