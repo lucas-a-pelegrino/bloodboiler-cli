@@ -24,7 +24,8 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "gluegun": "latest"
+    "gluegun": "latest",
+    "ora": "^5.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
