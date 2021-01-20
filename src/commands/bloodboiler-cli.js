@@ -1,11 +1,10 @@
-
 const command = {
   name: 'bloodboiler-cli',
-  run: async toolbox => {
-    const { print } = toolbox
+  run: async (toolbox) => {
+    const { print } = toolbox;
 
-    print.info('Welcome to your CLI')
-  }
-}
+    print.info('Welcome to your CLI');
+  },
+};
 
-module.exports = command
+module.exports = command;

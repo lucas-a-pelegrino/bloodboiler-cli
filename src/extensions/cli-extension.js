@@ -1,10 +1,9 @@
-
 // add your CLI-specific functionality here, which will then be accessible
 // to your commands
-module.exports = toolbox => {
+module.exports = (toolbox) => {
   toolbox.foo = () => {
-    toolbox.print.info('called foo extension')
-  }
+    toolbox.print.info('called foo extension');
+  };
 
   // enable this if you want to read configuration in from
   // the current folder's package.json (in a "bloodboiler-cli" property),
@@ -13,4 +12,4 @@ module.exports = toolbox => {
   //   ...toolbox.config,
   //   ...toolbox.config.loadConfig("bloodboiler-cli", process.cwd())
   // }
-}
+};
