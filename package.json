@@ -1,6 +1,6 @@
 {
   "name": "bloodboiler-cli",
-  "version": "0.0.1",
+  "version": "1.0.0-beta",
   "description": "bloodboiler-cli CLI",
   "author": "Lucas A Pelegrino <lucas.assuncao.p@gmail.com>",
   "bin": {
