@@ -1,10 +1,6 @@
 const ora = require('ora');
 
-const filesToBeRemoved = ['.git/', '.github/', 'CONTRIBUTING.md'];
-const databaseTypes = {
-  sql: 'https://github.com/lucas-a-pelegrino/node-bloodboiler-sequelized.git',
-  nosql: 'https://github.com/lucas-a-pelegrino/node-bloodboiler.git',
-};
+const constants = require('../utils/constants');
 
 module.exports = {
   name: 'new',
@@ -42,17 +38,15 @@ module.exports = {
     ]);
 
     const spinner = ora(`🚨 Downloading bloodboiler base...`).start();
-
-    await system.run(`git clone ${databaseTypes[database]} ${appName} --single-branch`);
-
+    await system.run(`git clone --depth 1 ${constants.databaseTypes[database]} ${appName} --no-tags`);
     spinner.succeed();
-    spinner.start('📂 Cleaning up...');
 
-    filesToBeRemoved.forEach(async (file) => {
+    spinner.start('📂 Cleaning up project...');
+    constants.filesToBeRemoved.forEach(async (file) => {
       await filesystem.remove(`${appName}/${file}`);
     });
-
     spinner.succeed();
+
     spinner.start('📦 Installing packages...');
     await system.run(`cd ${appName} && git init && npm install`);
     spinner.succeed();

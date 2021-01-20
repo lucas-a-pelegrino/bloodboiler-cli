@@ -50,5 +50,18 @@
     "env": [
       "jest"
     ]
-  }
+  },
+  "main": "commitlint.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucas-a-pelegrino/bloodboiler-cli.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/lucas-a-pelegrino/bloodboiler-cli/issues"
+  },
+  "homepage": "https://github.com/lucas-a-pelegrino/bloodboiler-cli#readme"
 }
