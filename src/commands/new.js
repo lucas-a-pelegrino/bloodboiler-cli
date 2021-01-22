@@ -1,6 +1,6 @@
 const ora = require('ora');
 
-const constants = require('../utils/constants');
+const { constants } = require('../utils/constants');
 
 module.exports = {
   name: 'new',
