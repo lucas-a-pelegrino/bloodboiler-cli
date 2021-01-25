@@ -10,7 +10,7 @@ module.exports = {
 
     const appName = parameters.first;
 
-    print.info('Welcome to bloodboiler CLI 🚀');
+    print.info('Welcome to bloodboiler CLI 🛠');
 
     const { database, author, description, version } = await prompt.ask([
       {
